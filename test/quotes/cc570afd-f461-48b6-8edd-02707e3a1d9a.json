@@ -1,0 +1,97 @@
+{
+  "id": "cc570afd-f461-48b6-8edd-02707e3a1d9a",
+  "number": "AN-2026-043",
+  "title": "عرض جديد — عرض أعمال وتوريد",
+  "client": "شركة أفق للاستثمار",
+  "clientInfo": {
+    "name": "شركة أفق للاستثمار",
+    "contactPerson": "أ. خالد التميمي",
+    "phone": "0544987654",
+    "email": "procurement@ufuk.sa",
+    "address": "جدة — برج الشاطئ",
+    "taxNumber": "300192837400003",
+    "crNumber": "4030192837"
+  },
+  "summary": "توريد وتركيب مكاتب إدارية وكراسي طبية مع الضمان الشامل لمدة 3 سنوات.",
+  "createdAt": "2026-10-29",
+  "status": "مسودة",
+  "folderId": "2499ffc0-8a94-42da-a6c0-8405d590dde7",
+  "updatedAt": "2026-10-31",
+  "accent": "#8e6742",
+  "items": [
+    {
+      "id": "9b8135a8-759f-4415-b3d9-de91eb9b6aa8",
+      "title": "مكاتب عمل ثنائية مدمجة",
+      "description": "خشب طبيعي مع حواجز عزل صوتية ومنافذ طاقة",
+      "quantity": 4,
+      "unitPrice": 2200
+    },
+    {
+      "id": "1674139c-eddb-492d-baf4-0621e10324bc",
+      "title": "كراسي مكتبية شبكية مريحة",
+      "description": "دعم فقرات قطني قابل للتعديل وهيكل ألومنيوم",
+      "quantity": 8,
+      "unitPrice": 750
+    },
+    {
+      "id": "e00c7bbb-3147-4353-8be5-a93d949023e8",
+      "title": "طاولة اجتماعات تتسع لـ 10 أشخاص",
+      "description": "سطح مقاوم للخدوش مع صندوق تمديد التوصيلات",
+      "quantity": 1,
+      "unitPrice": 4500
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 15,
+    "discountAmount": 0,
+    "discountType": "amount"
+  },
+  "paymentSchedule": [
+    {
+      "id": "428b65a0-fb86-479d-ab8b-b40b855da72e",
+      "name": "دفعة مقدمة عند تثبيت أمر الشراء",
+      "percentage": 40,
+      "amount": 8878
+    },
+    {
+      "id": "64429535-0b72-4d15-a5e2-b3ea8287ffde",
+      "name": "دفعة عند توريد البضاعة للموقع",
+      "percentage": 40,
+      "amount": 8878
+    },
+    {
+      "id": "f158f3d0-05a5-4304-b226-0bb63a68985b",
+      "name": "دفعة ختامية بعد التركيب والمعاينة",
+      "percentage": 20,
+      "amount": 4439
+    }
+  ],
+  "termsInfo": {
+    "validityDays": 30,
+    "terms": [
+      "يشمل التوريد أجور التوصيل والتركيب داخل نطاق مدينة جدة.",
+      "الضمان يسري لمدة 3 سنوات ضد عيوب التصنيع.",
+      "مدة التوريد 10 أيام عمل من تاريخ استلام الدفعة الأولى."
+    ],
+    "bankInfo": {
+      "bankName": "البنك الأهلي السعودي",
+      "accountName": "شركة أنفاس للتجارة والتوريد",
+      "iban": "SA1210000001234567890123"
+    }
+  },
+  "templateSnapshot": {
+    "id": "business",
+    "name": "عرض أعمال وتوريد",
+    "version": 1,
+    "accent": "#8e6742",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 15,
+      "discountAmount": 0,
+      "discountType": "amount"
+    }
+  }
+}

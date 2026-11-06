@@ -1,0 +1,17 @@
+name: اقتراح ميزة جديدة (Feature Request)
+description: اقترح فكرة أو قالباً جديداً لمشروع طِرَاس
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: وصف الفكرة أو الميزة المقترحة
+      description: اشرح الميزة وكيف ستفيد مستخدمي التطبيق في إنشاء عروض الأسعار.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: هل فكرت في حلول بديلة؟
+      description: اذكر أي بدائل أو تطبيقات سابقة ألهمتك بهذه الفكرة.

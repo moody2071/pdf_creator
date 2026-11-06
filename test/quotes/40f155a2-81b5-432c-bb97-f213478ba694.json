@@ -1,0 +1,37 @@
+{
+  "id": "40f155a2-81b5-432c-bb97-f213478ba694",
+  "number": "AN-2026-051",
+  "title": "عرض جديد — عرض أعمال — نسخة",
+  "client": "",
+  "summary": "بناء الهوية البصرية الكاملة ودليل الاستخدام والمطبوعات.",
+  "status": "مسودة",
+  "folderId": null,
+  "updatedAt": "2026-10-31",
+  "accent": "#a66c43",
+  "items": [
+    {
+      "id": "39b722ac-770a-4640-9908-9212745788f9",
+      "title": "",
+      "quantity": 1,
+      "unitPrice": 0
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 0,
+    "discountAmount": 0
+  },
+  "templateSnapshot": {
+    "id": "business",
+    "name": "عرض أعمال",
+    "version": 1,
+    "accent": "#8e6742",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 0,
+      "discountAmount": 0
+    }
+  }
+}

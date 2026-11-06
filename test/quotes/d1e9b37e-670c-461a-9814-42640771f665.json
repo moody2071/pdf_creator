@@ -1,0 +1,37 @@
+{
+  "id": "d1e9b37e-670c-461a-9814-42640771f665",
+  "number": "AN-2026-036",
+  "title": "عرض جديد — عرض بسيط",
+  "client": "",
+  "summary": "جلسة تصوير احترافية للمنتجات مع المعالجة اللونية.",
+  "status": "مسودة",
+  "folderId": null,
+  "updatedAt": "2026-10-31",
+  "accent": "#737d9c",
+  "items": [
+    {
+      "id": "eced80ac-508a-4fc2-a561-10f06537206c",
+      "title": "",
+      "quantity": 1,
+      "unitPrice": 0
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 0,
+    "discountAmount": 0
+  },
+  "templateSnapshot": {
+    "id": "minimal",
+    "name": "عرض بسيط",
+    "version": 1,
+    "accent": "#536b61",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 0,
+      "discountAmount": 0
+    }
+  }
+}

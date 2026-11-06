@@ -1,0 +1,37 @@
+{
+  "id": "33d43abc-9f75-4327-80a3-669e9477381b",
+  "number": "AN-2026-047",
+  "title": "عرض جديد — عرض أعمال",
+  "client": "",
+  "summary": "بناء الهوية البصرية الكاملة ودليل الاستخدام والمطبوعات.",
+  "status": "مسودة",
+  "folderId": "baef4ca3-1168-4b37-9ff1-32bb5130e9c7",
+  "updatedAt": "2026-10-30",
+  "accent": "#a66c43",
+  "items": [
+    {
+      "id": "43bf5c19-e8c6-4c9c-8442-1ac43f7b8ea2",
+      "title": "",
+      "quantity": 1,
+      "unitPrice": 0
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 0,
+    "discountAmount": 0
+  },
+  "templateSnapshot": {
+    "id": "business",
+    "name": "عرض أعمال",
+    "version": 1,
+    "accent": "#8e6742",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 0,
+      "discountAmount": 0
+    }
+  }
+}

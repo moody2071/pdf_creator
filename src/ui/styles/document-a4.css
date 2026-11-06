@@ -1,0 +1,701 @@
+/* ----------------------------------------------------
+   EXECUTIVE A4 LIVE PREVIEW DOCUMENT STYLES
+   Inspired by pdf.html & elevated for luxury clarity
+---------------------------------------------------- */
+.ltr-num {
+  direction: ltr;
+  unicode-bidi: embed;
+  display: inline-block;
+}
+
+/* 1. Full-Bleed Executive Header Banner */
+.exec-header-banner {
+  background: var(--doc-banner-bg, var(--doc-primary));
+  color: #ffffff;
+  border-bottom: 4px solid var(--doc-secondary, #9a6b3b);
+  padding: 22px 28px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  position: relative;
+}
+
+.exec-banner-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.exec-brand-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.exec-emblem {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.exec-brand-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.exec-brand-sep {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+}
+
+.exec-template-tag {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 500;
+}
+
+.exec-status-pill {
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--doc-secondary, #9a6b3b);
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+}
+
+.exec-doc-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.exec-doc-subtitle {
+  margin: 5px 0 0;
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.exec-doc-subtitle strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.exec-banner-meta-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 9px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: none;
+  min-width: 165px;
+}
+
+.exec-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.exec-meta-line strong {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* 2. Inner Document Body */
+.exec-document-body {
+  padding: 20px 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+}
+
+/* 3. Parties & Metadata 3-Column Strip */
+.exec-parties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 11px 13px;
+}
+
+.exec-party-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+  padding-left: 8px;
+  border-left: 1px solid #e2e8f0;
+  min-width: 0;
+}
+
+.exec-party-card:last-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.exec-party-card.highlight-client {
+  border-right: 3px solid var(--doc-secondary, #9a6b3b);
+  padding-right: 8px;
+}
+
+.exec-party-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.exec-party-name {
+  font-size: 11px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.exec-party-sub {
+  font-size: 9.5px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.exec-party-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  font-size: 9.5px;
+  color: #334155;
+}
+
+.exec-party-contacts b {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* 4. Numbered Executive Sections */
+.exec-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exec-section-title {
+  margin: 0 !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  color: var(--doc-primary, #1e3a5f) !important;
+  border-right: 4px solid var(--doc-secondary, #9a6b3b);
+  padding-right: 9px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.3;
+}
+
+.exec-sec-num {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: var(--doc-primary, #1e3a5f);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+}
+
+.exec-summary-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  padding: 10px 13px;
+}
+
+.exec-summary-card p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.65;
+  color: #334155;
+}
+
+/* 5. Executive Pricing Table */
+.exec-table-wrap {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.exec-pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.exec-pricing-table th {
+  background: #f1f5f9 !important;
+  color: var(--doc-primary, #1e3a5f) !important;
+  border-bottom: 2px solid var(--doc-primary, #1e3a5f) !important;
+  font-weight: 800 !important;
+  font-size: 10.5px !important;
+  padding: 9px 10px !important;
+  text-align: right;
+}
+
+.exec-pricing-table td {
+  padding: 9px 10px !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  vertical-align: top;
+  color: #1e293b;
+}
+
+.exec-pricing-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.exec-pricing-table tbody tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+.exec-pricing-table .col-idx {
+  width: 34px;
+  text-align: center !important;
+}
+
+.exec-pricing-table .col-qty {
+  width: 58px;
+  text-align: center !important;
+}
+
+.exec-pricing-table .col-unit {
+  width: 105px;
+  text-align: left !important;
+}
+
+.exec-pricing-table .col-total {
+  width: 115px;
+  text-align: left !important;
+}
+
+.exec-row-badge {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #1e293b;
+  font-size: 9.5px;
+  font-weight: 800;
+  display: inline-grid;
+  place-items: center;
+}
+
+.exec-item-title {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.exec-item-desc {
+  display: block;
+  font-size: 10px;
+  color: #64748b;
+  margin-top: 2px;
+  line-height: 1.45;
+}
+
+.exec-qty-pill {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* 6. Financial Summary & Grand Total Banner */
+.exec-financial-summary {
+  display: grid;
+  grid-template-columns: 1fr minmax(250px, 52%);
+  gap: 14px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.exec-financial-notes {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 7px;
+  padding: 9px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exec-currency-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--doc-primary, #1e3a5f);
+}
+
+.exec-financial-notes p {
+  margin: 0;
+  font-size: 9.5px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.exec-totals-box {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.exec-totals-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  font-size: 10.5px;
+  color: #475569;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.exec-totals-line b {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.exec-totals-line.is-discount {
+  background: #ecfdf5;
+  color: #047857;
+  font-weight: 700;
+}
+
+.exec-totals-line.is-discount b {
+  color: #047857;
+}
+
+.exec-grand-total-bar {
+  background: var(--doc-primary, #1e3a5f);
+  color: #ffffff;
+  border-right: 4px solid var(--doc-secondary, #9a6b3b);
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+.exec-grand-total-bar strong {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* 7. Payment Milestones Grid */
+.exec-milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 9px;
+}
+
+.exec-milestone-card {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-top: 3px solid var(--doc-primary, #1e3a5f);
+  border-radius: 7px;
+  padding: 9px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.exec-ms-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.exec-ms-step {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.exec-ms-perc {
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(154, 107, 59, 0.14);
+  color: var(--doc-secondary, #9a6b3b);
+}
+
+.exec-ms-amount {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.exec-ms-desc {
+  font-size: 10px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+/* 8. Bank Transfer & Terms */
+.exec-bank-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-right: 3.5px solid var(--doc-primary, #1e3a5f);
+  border-radius: 7px;
+  padding: 9px 12px;
+}
+
+.exec-bank-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.exec-bank-item small {
+  font-size: 9px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.exec-bank-item b {
+  font-size: 10.5px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.exec-iban-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 10px !important;
+  letter-spacing: 0.4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.exec-terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exec-terms-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 10.5px;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.exec-term-bullet {
+  font-weight: 800;
+  color: var(--doc-secondary, #9a6b3b);
+  font-size: 10px;
+  flex: none;
+}
+
+.exec-closing-note {
+  margin-top: 4px;
+  background: var(--doc-soft-tint, rgba(30, 58, 95, 0.05));
+  border-right: 3px solid var(--doc-primary, #1e3a5f);
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 10px;
+  color: #1e293b;
+}
+
+/* 9. Official Two-Party Approval & Signature Block */
+.exec-approval-section {
+  padding-top: 10px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.exec-approval-intro {
+  margin: 0;
+  font-size: 10px;
+  color: #475569;
+}
+
+.exec-signatures-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.exec-sig-box {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exec-sig-role {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: var(--doc-primary, #1e3a5f);
+  border-bottom: 1px dashed #cbd5e1;
+  padding-bottom: 4px;
+}
+
+.exec-sig-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #475569;
+}
+
+.exec-sig-field b {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.exec-sig-dots {
+  color: #94a3b8;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+/* 10. Document Page Footer */
+.exec-document-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9.5px;
+  color: #64748b;
+  position: static !important;
+}
+
+
+/* Native A4 Print Rules (@media print) */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  .global-bar,
+  .editor-head,
+  .editor-form,
+  .preview-toolbar,
+  .doc-warnings-bar,
+  .page-controls,
+  .toast,
+  .apple-modal-backdrop {
+    display: none !important;
+  }
+
+  .app-shell,
+  .editor-screen,
+  .editor-workarea,
+  .preview-workarea,
+  .a4-stage {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .a4-pages-stack {
+    width: 100% !important;
+    max-width: none !important;
+    gap: 0 !important;
+    zoom: 100% !important;
+  }
+
+  .quote-document.a4-page-sheet {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .quote-document.a4-page-sheet:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .exec-pricing-table tr,
+  .exec-financial-summary,
+  .exec-milestone-card,
+  .exec-bank-grid,
+  .exec-signatures-grid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+

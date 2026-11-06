@@ -1,0 +1,46 @@
+{
+  "name": "tiras-quotes-workspace",
+  "version": "1.0.0",
+  "description": "طِرَاس — مساحة عمل محلية فاخرة لإنشاء وإدارة وتصدير عروض الأسعار بصيغة A4 و PDF بدون خوادم خارجية.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mohammed Bataher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moody2071/pdf_creator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moody2071/pdf_creator/issues"
+  },
+  "homepage": "https://tiras-nine.vercel.app",
+  "keywords": [
+    "tiras",
+    "quotes",
+    "pdf",
+    "invoice",
+    "local-first",
+    "arabic",
+    "rtl",
+    "file-system-access-api",
+    "a4-preview",
+    "react",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  }
+}

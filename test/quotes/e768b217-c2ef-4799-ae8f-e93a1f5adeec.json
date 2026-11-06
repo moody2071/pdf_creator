@@ -1,0 +1,37 @@
+{
+  "id": "e768b217-c2ef-4799-ae8f-e93a1f5adeec",
+  "number": "AN-2026-020",
+  "title": "عرض جديد — عرض خدمات",
+  "client": "",
+  "summary": "تصميم وتطوير موقع تعريفي متكامل مع لوحة إدارة المحتوى.",
+  "status": "مسودة",
+  "folderId": null,
+  "updatedAt": "2026-10-29",
+  "accent": "#315c50",
+  "items": [
+    {
+      "id": "155ef205-dfad-4070-b594-05d3a3c1b0b6",
+      "title": "",
+      "quantity": 1,
+      "unitPrice": 0
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 0,
+    "discountAmount": 0
+  },
+  "templateSnapshot": {
+    "id": "classic",
+    "name": "عرض خدمات",
+    "version": 1,
+    "accent": "#243f5b",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 0,
+      "discountAmount": 0
+    }
+  }
+}

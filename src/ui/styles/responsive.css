@@ -1,0 +1,306 @@
+/* ----------------------------------------------------
+   RESPONSIVE DESIGN (macOS / iPadOS / iOS)
+   Guarantees ZERO horizontal overflow on all viewports
+---------------------------------------------------- */
+
+/* Laptop & Large Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .global-bar {
+    gap: 12px;
+    padding: 0 16px;
+  }
+  .brand-lockup small {
+    display: none;
+  }
+  .workspace-connection .muted,
+  .workspace-divider {
+    display: none;
+  }
+  .workspace-name-label {
+    max-width: 140px;
+  }
+  .editor-workarea {
+    grid-template-columns: minmax(300px, 46%) 1fr;
+  }
+  .designer-workarea {
+    grid-template-columns: 160px minmax(180px, 1fr) minmax(240px, 1.1fr);
+  }
+}
+
+/* Tablet Portrait & Small Laptop (<= 768px) */
+@media (max-width: 768px) {
+  .global-bar {
+    height: 56px;
+    gap: 10px;
+    padding: 0 12px;
+  }
+  .global-search kbd {
+    display: none;
+  }
+  .global-search {
+    max-width: 220px;
+  }
+  .workspace-name-label {
+    max-width: 100px;
+  }
+  .library-screen {
+    padding: 12px 14px 28px;
+  }
+  .library-header-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .library-toolbar {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 8px;
+    padding: 6px 0 10px;
+  }
+  .grid-size-segmented {
+    align-self: flex-start;
+  }
+  .filter-set {
+    width: 100%;
+  }
+  .template-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* Mobile Devices (<= 640px) */
+@media (max-width: 640px) {
+  .global-bar {
+    height: 52px;
+    gap: 8px;
+    padding: 0 10px;
+  }
+  .brand-lockup b {
+    font-size: 13.5px;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
+  .workspace-connection {
+    padding: 4px 7px;
+    font-size: 10.5px;
+    gap: 5px;
+  }
+  .workspace-name-label {
+    max-width: 70px;
+  }
+  .global-search {
+    height: 32px;
+    padding: 0 8px;
+    font-size: 11px;
+    flex: 1 1 80px;
+  }
+  .global-search input {
+    font-size: 11.5px;
+  }
+  .global-actions {
+    gap: 5px;
+  }
+  .global-btn-folder {
+    width: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+  .global-btn-folder .global-btn-txt {
+    display: none;
+  }
+  .global-btn-quote {
+    height: 32px;
+    padding: 0 9px;
+    font-size: 11.5px;
+  }
+  .library-screen {
+    padding: 10px 10px 24px;
+  }
+  .title-and-badges h1 {
+    font-size: 17px;
+  }
+  .grid-size-segmented button {
+    height: 24px;
+    padding: 0 7px;
+    font-size: 10px;
+  }
+  .bulk-action-bar {
+    bottom: 16px;
+    top: auto;
+    width: calc(100vw - 20px);
+    max-width: 480px;
+    border-radius: 18px;
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .bulk-buttons {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .bulk-buttons .button {
+    flex: 1 1 auto;
+  }
+
+  /* Proportional 2-column & 3-column mobile grids */
+  .paper-space.size-compact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 6px;
+  }
+  .paper-space.size-compact .document-preview,
+  .paper-space.size-compact .create-paper-tile {
+    height: 130px;
+  }
+  .paper-space.size-compact .folder-art {
+    height: 105px;
+  }
+
+  .paper-space.size-small,
+  .paper-space.size-medium {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 8px;
+  }
+  .paper-space.size-small .document-preview,
+  .paper-space.size-small .create-paper-tile,
+  .paper-space.size-medium .document-preview,
+  .paper-space.size-medium .create-paper-tile {
+    height: 180px;
+  }
+  .paper-space.size-small .folder-art,
+  .paper-space.size-medium .folder-art {
+    height: 145px;
+  }
+
+  .paper-space.size-large {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 10px;
+  }
+  .paper-space.size-large .document-preview,
+  .paper-space.size-large .create-paper-tile {
+    height: 210px;
+  }
+  .paper-space.size-large .folder-art {
+    height: 170px;
+  }
+
+  .template-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .editor-screen,
+  .designer-screen {
+    height: auto;
+    min-height: calc(100vh - 52px);
+  }
+  .editor-head,
+  .designer-head {
+    height: auto;
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .editor-head-actions,
+  .designer-head-actions {
+    margin-right: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .editor-workarea {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .preview-workarea {
+    min-height: 350px;
+    flex: none;
+    padding: 10px;
+  }
+  .editor-form {
+    border-left: 0;
+    border-top: 0.5px solid var(--apple-separator);
+  }
+}
+
+/* Handheld Phones (<= 500px) */
+@media (max-width: 500px) {
+  .workspace-popover {
+    position: fixed;
+    top: 54px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    max-width: none;
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
+  }
+  .global-bar {
+    gap: 6px;
+    padding: 0 8px;
+  }
+  .global-actions {
+    gap: 4px;
+  }
+  .global-btn-quote {
+    width: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+  .global-btn-quote .global-btn-txt {
+    display: none;
+  }
+  .workspace-connection {
+    padding: 4px 6px;
+    gap: 4px;
+  }
+  .workspace-name-label {
+    display: none;
+  }
+  .global-search {
+    min-width: 70px;
+    padding: 0 6px;
+  }
+  .global-search input::placeholder {
+    font-size: 11px;
+  }
+}
+
+/* Very Narrow Mobile (<= 360px) */
+@media (max-width: 360px) {
+  .global-bar {
+    gap: 6px;
+    padding: 0 8px;
+  }
+  .brand-lockup b {
+    display: none;
+  }
+  .workspace-connection {
+    padding: 3px 5px;
+  }
+  .workspace-chevron {
+    display: none;
+  }
+  .paper-space.size-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .paper-space.size-small,
+  .paper-space.size-medium,
+  .paper-space.size-large {
+    grid-template-columns: 1fr;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+

@@ -1,0 +1,92 @@
+{
+  "id": "330a2375-7afc-43ae-aeb6-4e250b8b0010",
+  "number": "AN-2026-056",
+  "title": "عرض جديد — عرض خدمات واستشارات",
+  "client": "شركة مدار للتقنية",
+  "clientInfo": {
+    "name": "شركة مدار للتقنية",
+    "contactPerson": "م. فهد السالم",
+    "phone": "0555123456",
+    "email": "info@madar-tech.sa",
+    "address": "الرياض — طريق الملك فهد",
+    "taxNumber": "310234567800003"
+  },
+  "summary": "تصميم وبرمجة واجهات الموقع التعريفي المتجاوبة مع تهيئة محركات البحث وربط لوحة إدارة المحتوى.",
+  "createdAt": "2026-11-06",
+  "status": "مسودة",
+  "folderId": null,
+  "updatedAt": "2026-11-06",
+  "accent": "#243f5b",
+  "items": [
+    {
+      "id": "aece0ecc-6dd0-43eb-a71a-bb36017a5e42",
+      "title": "دراسة وتخطيط تجربة المستخدم",
+      "description": "هندسة بنية الصفحات والمخططات الأولية",
+      "quantity": 1,
+      "unitPrice": 3500
+    },
+    {
+      "id": "60a0916f-5db9-44d9-bff5-08d5326691f1",
+      "title": "تصميم الواجهات UI/UX",
+      "description": "تصميم الواجهات الكاملة للديسكتوب والموبايل",
+      "quantity": 1,
+      "unitPrice": 4800
+    },
+    {
+      "id": "492ff5fd-2d8b-47ca-bd32-4eaafe78e4e8",
+      "title": "البرمجة والتكامل التقني",
+      "description": "تطوير الواجهات وربط نماذج التواصل واللوحة",
+      "quantity": 1,
+      "unitPrice": 7000
+    }
+  ],
+  "moneyRules": {
+    "currency": "SAR",
+    "fractionDigits": 2,
+    "taxRate": 0,
+    "discountAmount": 0,
+    "discountType": "amount"
+  },
+  "paymentSchedule": [
+    {
+      "id": "606be341-8e18-4451-be32-f24b4352f87c",
+      "name": "الدفعة الأولى — عند توقيع العقد وبدء العمل",
+      "percentage": 50,
+      "amount": 7650
+    },
+    {
+      "id": "e55ce9a3-67f2-4abf-a625-717355e4b0d7",
+      "name": "الدفعة الختامية — عند الإطلاق والتسليم النهائي",
+      "percentage": 50,
+      "amount": 7650
+    }
+  ],
+  "termsInfo": {
+    "validityDays": 15,
+    "terms": [
+      "يسري هذا العرض لمدة 15 يومًا من تاريخ إصداره.",
+      "يبدأ العمل فور استلام الدفعة المقدمة واعتماد نطاق العمل.",
+      "يشمل العرض جولتين من المراجعات والتعديلات على المخرجات المحددة.",
+      "أي متطلبات أو إضافات جديدة خارج نطاق العرض تخضع لملحق تسعير مستقل.",
+      "تنتقل ملكية المخرجات النهائية للعميل فور سداد كامل مستحقات العرض."
+    ],
+    "bankInfo": {
+      "bankName": "مصرف الراجحي",
+      "accountName": "مؤسسة طِرَاس لحلول الأعمال",
+      "iban": "SA4480000201608010099999"
+    }
+  },
+  "templateSnapshot": {
+    "id": "classic",
+    "name": "عرض خدمات واستشارات",
+    "version": 1,
+    "accent": "#243f5b",
+    "moneyRules": {
+      "currency": "SAR",
+      "fractionDigits": 2,
+      "taxRate": 0,
+      "discountAmount": 0,
+      "discountType": "amount"
+    }
+  }
+}

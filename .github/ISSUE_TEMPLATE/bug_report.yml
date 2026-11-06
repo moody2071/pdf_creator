@@ -1,0 +1,33 @@
+name: تقرير خطأ برمجية (Bug Report)
+description: أنشئ تقريراً لمساعدتنا في إصلاح وتتبع المشكلة
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: شكراً لإبلاغنا بالمشكلة للمساعدة في تطوير طِرَاس!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: ما هي المشكلة؟
+      description: اشرح بوضوح ما الذي حدث ولم يكن متوقعاً.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: خطوات إعادة تكرار الخطأ
+      description: اذكر الخطوات بالتسلسل لمساعدتنا في معرفة السبب.
+      placeholder: |
+        1. اضغط على '...'
+        2. اسحب الورقة إلى '...'
+        3. شاهد الخطأ
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: بيئة التشغيل
+      description: المتصفح، نظام التشغيل (مثال: Chrome 120 على Windows 11 أو Safari على iOS)
+    validations:
+      required: true
